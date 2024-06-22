@@ -8,21 +8,85 @@
 
 /* Begin PBXBuildFile section */
 		1CE12BD92C27710700588E1F /* SwiftUI_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12BD82C27710700588E1F /* SwiftUI_MVVMApp.swift */; };
-		1CE12BDB2C27710700588E1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12BDA2C27710700588E1F /* ContentView.swift */; };
+		1CE12BDB2C27710700588E1F /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12BDA2C27710700588E1F /* AppView.swift */; };
 		1CE12BDD2C27710900588E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE12BDC2C27710900588E1F /* Assets.xcassets */; };
-		1CE12BE02C27710900588E1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE12BDF2C27710900588E1F /* Preview Assets.xcassets */; };
+		1CE12BED2C27712200588E1F /* RepoDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12BEC2C27712200588E1F /* RepoDetailViewModelTests.swift */; };
+		1CE12BF72C27716100588E1F /* RouterPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12BF62C27716100588E1F /* RouterPath.swift */; };
+		1CE12BFA2C27718B00588E1F /* RepositoryOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12BF92C27718B00588E1F /* RepositoryOverview.swift */; };
+		1CE12BFC2C27719700588E1F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12BFB2C27719700588E1F /* Repository.swift */; };
+		1CE12BFE2C2771BA00588E1F /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12BFD2C2771BA00588E1F /* Issue.swift */; };
+		1CE12C012C2771FC00588E1F /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C002C2771FC00588E1F /* ApiClient.swift */; };
+		1CE12C032C27720D00588E1F /* ApiClientKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C022C27720D00588E1F /* ApiClientKey.swift */; };
+		1CE12C052C27721D00588E1F /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C042C27721D00588E1F /* ApiError.swift */; };
+		1CE12C072C27723000588E1F /* TestApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C062C27723000588E1F /* TestApiClient.swift */; };
+		1CE12C0A2C27724400588E1F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C092C27724400588E1F /* Endpoint.swift */; };
+		1CE12C0C2C27725000588E1F /* RepositoryEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C0B2C27725000588E1F /* RepositoryEndpoint.swift */; };
+		1CE12C0E2C27726600588E1F /* SharedDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C0D2C27726600588E1F /* SharedDateFormatter.swift */; };
+		1CE12C102C2772AE00588E1F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C0F2C2772AE00588E1F /* Constants.swift */; };
+		1CE12C132C27730E00588E1F /* RepoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C122C27730E00588E1F /* RepoDetailView.swift */; };
+		1CE12C152C27731E00588E1F /* RepoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C142C27731E00588E1F /* RepoDetailViewModel.swift */; };
+		1CE12C182C27733C00588E1F /* RepoListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C172C27733C00588E1F /* RepoListRowView.swift */; };
+		1CE12C1A2C27734B00588E1F /* RepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C192C27734B00588E1F /* RepoListView.swift */; };
+		1CE12C1C2C27735700588E1F /* RepoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C1B2C27735700588E1F /* RepoListViewModel.swift */; };
+		1CE12C1F2C2773B700588E1F /* Issue+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C1E2C2773B700588E1F /* Issue+Mock.swift */; };
+		1CE12C212C2773C500588E1F /* Repository+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C202C2773C500588E1F /* Repository+Mock.swift */; };
+		1CE12C232C2773D600588E1F /* RepositoryOverview+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C222C2773D600588E1F /* RepositoryOverview+Mock.swift */; };
+		1CE12C272C2773FC00588E1F /* MockApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C262C2773FC00588E1F /* MockApiClient.swift */; };
+		1CE12C292C27742700588E1F /* RepoListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE12C282C27742700588E1F /* RepoListViewModelTests.swift */; };
+		1CE12C2B2C2774CB00588E1F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1CE12C2A2C2774CB00588E1F /* README.md */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CE12BEE2C27712200588E1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CE12BCD2C27710700588E1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CE12BD42C27710700588E1F;
+			remoteInfo = "SwiftUI-MVVM";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1CE12BD52C27710700588E1F /* SwiftUI-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE12BD82C27710700588E1F /* SwiftUI_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVMApp.swift; sourceTree = "<group>"; };
-		1CE12BDA2C27710700588E1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1CE12BDA2C27710700588E1F /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		1CE12BDC2C27710900588E1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1CE12BDF2C27710900588E1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CE12BEA2C27712200588E1F /* SwiftUI-MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-MVVMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE12BEC2C27712200588E1F /* RepoDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailViewModelTests.swift; sourceTree = "<group>"; };
+		1CE12BF62C27716100588E1F /* RouterPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterPath.swift; sourceTree = "<group>"; };
+		1CE12BF92C27718B00588E1F /* RepositoryOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryOverview.swift; sourceTree = "<group>"; };
+		1CE12BFB2C27719700588E1F /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		1CE12BFD2C2771BA00588E1F /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		1CE12C002C2771FC00588E1F /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		1CE12C022C27720D00588E1F /* ApiClientKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientKey.swift; sourceTree = "<group>"; };
+		1CE12C042C27721D00588E1F /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		1CE12C062C27723000588E1F /* TestApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiClient.swift; sourceTree = "<group>"; };
+		1CE12C092C27724400588E1F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		1CE12C0B2C27725000588E1F /* RepositoryEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEndpoint.swift; sourceTree = "<group>"; };
+		1CE12C0D2C27726600588E1F /* SharedDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDateFormatter.swift; sourceTree = "<group>"; };
+		1CE12C0F2C2772AE00588E1F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1CE12C122C27730E00588E1F /* RepoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailView.swift; sourceTree = "<group>"; };
+		1CE12C142C27731E00588E1F /* RepoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailViewModel.swift; sourceTree = "<group>"; };
+		1CE12C172C27733C00588E1F /* RepoListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListRowView.swift; sourceTree = "<group>"; };
+		1CE12C192C27734B00588E1F /* RepoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListView.swift; sourceTree = "<group>"; };
+		1CE12C1B2C27735700588E1F /* RepoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewModel.swift; sourceTree = "<group>"; };
+		1CE12C1E2C2773B700588E1F /* Issue+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Issue+Mock.swift"; sourceTree = "<group>"; };
+		1CE12C202C2773C500588E1F /* Repository+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repository+Mock.swift"; sourceTree = "<group>"; };
+		1CE12C222C2773D600588E1F /* RepositoryOverview+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoryOverview+Mock.swift"; sourceTree = "<group>"; };
+		1CE12C262C2773FC00588E1F /* MockApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiClient.swift; sourceTree = "<group>"; };
+		1CE12C282C27742700588E1F /* RepoListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewModelTests.swift; sourceTree = "<group>"; };
+		1CE12C2A2C2774CB00588E1F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1CE12BD22C27710700588E1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE12BE72C27712200588E1F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,7 +99,9 @@
 		1CE12BCC2C27710700588E1F = {
 			isa = PBXGroup;
 			children = (
+				1CE12C2A2C2774CB00588E1F /* README.md */,
 				1CE12BD72C27710700588E1F /* SwiftUI-MVVM */,
+				1CE12BEB2C27712200588E1F /* SwiftUI-MVVMTests */,
 				1CE12BD62C27710700588E1F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				1CE12BD52C27710700588E1F /* SwiftUI-MVVM.app */,
+				1CE12BEA2C27712200588E1F /* SwiftUI-MVVMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,20 +118,121 @@
 		1CE12BD72C27710700588E1F /* SwiftUI-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				1CE12BF82C27717600588E1F /* Model */,
+				1CE12BF52C27715300588E1F /* Navigation */,
+				1CE12BFF2C2771E800588E1F /* Networking */,
+				1CE12BF32C27714100588E1F /* Scene */,
+				1CE12BF42C27714A00588E1F /* Utility */,
 				1CE12BD82C27710700588E1F /* SwiftUI_MVVMApp.swift */,
-				1CE12BDA2C27710700588E1F /* ContentView.swift */,
+				1CE12BDA2C27710700588E1F /* AppView.swift */,
 				1CE12BDC2C27710900588E1F /* Assets.xcassets */,
-				1CE12BDE2C27710900588E1F /* Preview Content */,
+				1CE12C0F2C2772AE00588E1F /* Constants.swift */,
 			);
 			path = "SwiftUI-MVVM";
 			sourceTree = "<group>";
 		};
-		1CE12BDE2C27710900588E1F /* Preview Content */ = {
+		1CE12BEB2C27712200588E1F /* SwiftUI-MVVMTests */ = {
 			isa = PBXGroup;
 			children = (
-				1CE12BDF2C27710900588E1F /* Preview Assets.xcassets */,
+				1CE12C242C2773DE00588E1F /* ViewModel */,
+				1CE12C1D2C27737900588E1F /* Mock */,
+				1CE12C262C2773FC00588E1F /* MockApiClient.swift */,
 			);
-			path = "Preview Content";
+			path = "SwiftUI-MVVMTests";
+			sourceTree = "<group>";
+		};
+		1CE12BF32C27714100588E1F /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				1CE12C112C27730400588E1F /* RepoDetail */,
+				1CE12C162C27732700588E1F /* RepoList */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		1CE12BF42C27714A00588E1F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1CE12C0D2C27726600588E1F /* SharedDateFormatter.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1CE12BF52C27715300588E1F /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1CE12BF62C27716100588E1F /* RouterPath.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		1CE12BF82C27717600588E1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CE12BFD2C2771BA00588E1F /* Issue.swift */,
+				1CE12BFB2C27719700588E1F /* Repository.swift */,
+				1CE12BF92C27718B00588E1F /* RepositoryOverview.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CE12BFF2C2771E800588E1F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1CE12C082C27723900588E1F /* Endpoint */,
+				1CE12C002C2771FC00588E1F /* ApiClient.swift */,
+				1CE12C022C27720D00588E1F /* ApiClientKey.swift */,
+				1CE12C042C27721D00588E1F /* ApiError.swift */,
+				1CE12C062C27723000588E1F /* TestApiClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1CE12C082C27723900588E1F /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				1CE12C092C27724400588E1F /* Endpoint.swift */,
+				1CE12C0B2C27725000588E1F /* RepositoryEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		1CE12C112C27730400588E1F /* RepoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1CE12C122C27730E00588E1F /* RepoDetailView.swift */,
+				1CE12C142C27731E00588E1F /* RepoDetailViewModel.swift */,
+			);
+			path = RepoDetail;
+			sourceTree = "<group>";
+		};
+		1CE12C162C27732700588E1F /* RepoList */ = {
+			isa = PBXGroup;
+			children = (
+				1CE12C172C27733C00588E1F /* RepoListRowView.swift */,
+				1CE12C192C27734B00588E1F /* RepoListView.swift */,
+				1CE12C1B2C27735700588E1F /* RepoListViewModel.swift */,
+			);
+			path = RepoList;
+			sourceTree = "<group>";
+		};
+		1CE12C1D2C27737900588E1F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				1CE12C1E2C2773B700588E1F /* Issue+Mock.swift */,
+				1CE12C202C2773C500588E1F /* Repository+Mock.swift */,
+				1CE12C222C2773D600588E1F /* RepositoryOverview+Mock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		1CE12C242C2773DE00588E1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1CE12BEC2C27712200588E1F /* RepoDetailViewModelTests.swift */,
+				1CE12C282C27742700588E1F /* RepoListViewModelTests.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +255,24 @@
 			productReference = 1CE12BD52C27710700588E1F /* SwiftUI-MVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1CE12BE92C27712200588E1F /* SwiftUI-MVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE12BF02C27712200588E1F /* Build configuration list for PBXNativeTarget "SwiftUI-MVVMTests" */;
+			buildPhases = (
+				1CE12BE62C27712200588E1F /* Sources */,
+				1CE12BE72C27712200588E1F /* Frameworks */,
+				1CE12BE82C27712200588E1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CE12BEF2C27712200588E1F /* PBXTargetDependency */,
+			);
+			name = "SwiftUI-MVVMTests";
+			productName = "SwiftUI-MVVMTests";
+			productReference = 1CE12BEA2C27712200588E1F /* SwiftUI-MVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +285,10 @@
 				TargetAttributes = {
 					1CE12BD42C27710700588E1F = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					1CE12BE92C27712200588E1F = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 1CE12BD42C27710700588E1F;
 					};
 				};
 			};
@@ -116,6 +306,7 @@
 			projectRoot = "";
 			targets = (
 				1CE12BD42C27710700588E1F /* SwiftUI-MVVM */,
+				1CE12BE92C27712200588E1F /* SwiftUI-MVVMTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +316,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CE12BE02C27710900588E1F /* Preview Assets.xcassets in Resources */,
 				1CE12BDD2C27710900588E1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE12BE82C27712200588E1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE12C2B2C2774CB00588E1F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +335,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CE12BDB2C27710700588E1F /* ContentView.swift in Sources */,
+				1CE12C0C2C27725000588E1F /* RepositoryEndpoint.swift in Sources */,
+				1CE12C012C2771FC00588E1F /* ApiClient.swift in Sources */,
+				1CE12BF72C27716100588E1F /* RouterPath.swift in Sources */,
+				1CE12BDB2C27710700588E1F /* AppView.swift in Sources */,
+				1CE12C1A2C27734B00588E1F /* RepoListView.swift in Sources */,
+				1CE12BFC2C27719700588E1F /* Repository.swift in Sources */,
+				1CE12BFA2C27718B00588E1F /* RepositoryOverview.swift in Sources */,
+				1CE12C132C27730E00588E1F /* RepoDetailView.swift in Sources */,
+				1CE12C072C27723000588E1F /* TestApiClient.swift in Sources */,
+				1CE12C052C27721D00588E1F /* ApiError.swift in Sources */,
+				1CE12C152C27731E00588E1F /* RepoDetailViewModel.swift in Sources */,
 				1CE12BD92C27710700588E1F /* SwiftUI_MVVMApp.swift in Sources */,
+				1CE12BFE2C2771BA00588E1F /* Issue.swift in Sources */,
+				1CE12C0A2C27724400588E1F /* Endpoint.swift in Sources */,
+				1CE12C182C27733C00588E1F /* RepoListRowView.swift in Sources */,
+				1CE12C102C2772AE00588E1F /* Constants.swift in Sources */,
+				1CE12C1C2C27735700588E1F /* RepoListViewModel.swift in Sources */,
+				1CE12C0E2C27726600588E1F /* SharedDateFormatter.swift in Sources */,
+				1CE12C032C27720D00588E1F /* ApiClientKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE12BE62C27712200588E1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE12C232C2773D600588E1F /* RepositoryOverview+Mock.swift in Sources */,
+				1CE12BED2C27712200588E1F /* RepoDetailViewModelTests.swift in Sources */,
+				1CE12C292C27742700588E1F /* RepoListViewModelTests.swift in Sources */,
+				1CE12C1F2C2773B700588E1F /* Issue+Mock.swift in Sources */,
+				1CE12C272C2773FC00588E1F /* MockApiClient.swift in Sources */,
+				1CE12C212C2773C500588E1F /* Repository+Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CE12BEF2C27712200588E1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CE12BD42C27710700588E1F /* SwiftUI-MVVM */;
+			targetProxy = 1CE12BEE2C27712200588E1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1CE12BE12C27710900588E1F /* Debug */ = {
@@ -271,7 +507,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-MVVM/Preview Content\"";
 				DEVELOPMENT_TEAM = T7B5WF7KXT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +535,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-MVVM/Preview Content\"";
 				DEVELOPMENT_TEAM = T7B5WF7KXT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -322,6 +556,42 @@
 			};
 			name = Release;
 		};
+		1CE12BF12C27712200588E1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T7B5WF7KXT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.redryerye.SwiftUI-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-MVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI-MVVM";
+			};
+			name = Debug;
+		};
+		1CE12BF22C27712200588E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T7B5WF7KXT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.redryerye.SwiftUI-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI-MVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI-MVVM";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -339,6 +609,15 @@
 			buildConfigurations = (
 				1CE12BE42C27710900588E1F /* Debug */,
 				1CE12BE52C27710900588E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE12BF02C27712200588E1F /* Build configuration list for PBXNativeTarget "SwiftUI-MVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE12BF12C27712200588E1F /* Debug */,
+				1CE12BF22C27712200588E1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
