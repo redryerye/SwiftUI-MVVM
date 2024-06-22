@@ -1,6 +1,6 @@
 # SwiftUI-MVVM
 
-This is a demo project built with SwiftUI in MVVM architecture, together with the Observation framework.
+This is a demo project built with SwiftUI and MVVM architecture, together with the Observation framework.
 
 The primary advantage of using a View Model is its testability. By separating the logic from the view we can easily test state changes.
 
